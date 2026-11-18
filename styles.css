@@ -359,7 +359,7 @@ code {
 .correspondence-ledger {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 14px 32px;
+  gap: 14px 20px;
   padding-top: 20px;
   border-top: 1px solid var(--rule-hairline);
 }
@@ -379,13 +379,13 @@ code {
 .corr-inline {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .corr-email {
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.89rem;
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: 1px;
   transition: border-color 0.18s ease, color 0.18s ease;
@@ -399,13 +399,14 @@ code {
 .corr-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 8px 13px;
   flex-wrap: wrap;
 }
 
 .underline-link {
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.89rem;
+  white-space: nowrap;
   border-bottom: 1px solid transparent;
   padding-bottom: 1px;
   transition: color 0.18s ease, border-color 0.18s ease;
@@ -479,10 +480,10 @@ a:hover .diag {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 8px 12px;
+  padding: 8px 11px;
   border-bottom: 1px solid var(--rule-hairline);
-  font-size: 0.67rem;
-  letter-spacing: 0.05em;
+  font-size: 0.635rem;
+  letter-spacing: 0.03em;
   white-space: nowrap;
   min-width: 0;
 }
