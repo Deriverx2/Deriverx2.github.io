@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E B Benson — AI &amp; Computational Biology Researcher</title>
+  <meta name="description" content="Personal research website of E B Benson — RIKEN LOTUS-JST Fellow working on AI Virtual Cells, Single-Cell Omics, Agentic AI Systems, and Computer Vision." />
+  <meta name="author" content="E B Benson" />
+  <meta name="keywords" content="E B Benson, RIKEN, AI Virtual Cells, Single-Cell Omics, Agentic AI, Machine Learning, Bioinformatics, Computer Vision, CUSAT, Deriverx2" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="E B Benson — AI &amp; Computational Biology Researcher" />
+  <meta property="og:description" content="RIKEN LOTUS-JST Fellow researching AI Virtual Cells, Single-Cell Omics, Agentic AI, and Low-Level Computer Vision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deriverx2.github.io/" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts: Editorial Serif + Clean Sans + Technical Monospace -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Structured Data for Academic Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "E B Benson",
+    "url": "https://deriverx2.github.io/",
+    "email": "mailto:benson.e.benny@gmail.com",
+    "jobTitle": "RIKEN LOTUS-JST Research Fellow",
+    "worksFor": {
+      "@type": "ResearchOrganization",
+      "name": "RIKEN BioResource Research Center (BRC)"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Cochin University of Science and Technology"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tsukuba",
+      "addressRegion": "Ibaraki",
+      "addressCountry": "JP"
+    },
+    "sameAs": [
+      "https://github.com/Deriverx2",
+      "https://www.linkedin.com/in/bensoneb"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- Minimal Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="E B Benson Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">E B Benson</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#open-source" class="nav-link">Open Source</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#credentials" class="nav-link">Honors</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle color theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="status-pill">
+            <span class="pulse-indicator" aria-hidden="true"></span>
+            <span>RIKEN BRC · Tsukuba, Japan</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">E B Benson</h1>
+          <p class="hero-subtitle">
+            Researcher at the intersection of <strong>AI Virtual Cells</strong>, <strong>Single-Cell Omics</strong>, and <strong>Agentic Foundation Models</strong>.
+          </p>
+
+          <p class="hero-bio">
+            Currently a <strong>RIKEN LOTUS-JST Fellow</strong> with Naoki Kubo’s group at RIKEN BioResource Research Center, investigating machine learning frameworks for gene regulation and cellular simulation, alongside pursuing an Integrated M.Sc. in AI &amp; Data Science at <strong>CUSAT</strong>. Previously built agentic document intelligence systems at SpectraAI (Singapore) and researched time-series modeling at IIT Bombay.
+          </p>
+
+          <div class="contact-bar">
+            <a href="mailto:benson.e.benny@gmail.com" class="contact-chip primary-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>benson.e.benny@gmail.com</span>
+            </a>
+
+            <button type="button" id="copy-email-btn" class="contact-chip" data-email="benson.e.benny@gmail.com" aria-label="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copy-email-label">Copy Email</span>
+            </button>
+
+            <a href="https://github.com/Deriverx2" target="_blank" rel="noopener noreferrer" class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/bensoneb" target="_blank" rel="noopener noreferrer" class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Latent Regulatory / Neural Graph -->
+        <div class="hero-visual" aria-label="Interactive simulation of a latent cellular regulatory graph">
+          <div class="canvas-frame">
+            <div class="canvas-header">
+              <span class="mono-tag">latent_regulatory_graph.sim</span>
+              <span class="canvas-status" id="sim-readout">nodes: 26 · active</span>
+            </div>
+            <canvas id="neural-cell-canvas"></canvas>
+            <div class="canvas-caption">
+              <span>Move or click to perturb state propagation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Pillars -->
+      <div class="research-pillars" aria-label="Core Research Themes">
+        <div class="pillar-card">
+          <span class="pillar-index">I. BioAI &amp; Omics</span>
+          <p>Single-cell multi-omics, gene regulatory inference, AI Virtual Cells, and computational pipelines for regenerative medicine.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-index">II. Agentic &amp; LLM Systems</span>
+          <p>Agent communication protocols, structured tool-use frameworks, parameter-efficient fine-tuning (LoRA), and multimodal RAG.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-index">III. Vision &amp; Dynamics</span>
+          <p>Unified all-in-one real-world image restoration (ECCV LoViF) and stochastic/attention-based time-series modeling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 // Publications -->
+    <section id="publications" class="section" aria-labelledby="pub-heading">
+      <div class="section-header">
+        <span class="section-index">01 // PUBLICATIONS</span>
+        <h2 id="pub-heading" class="section-title">Selected Research &amp; Papers</h2>
+      </div>
+
+      <div class="pub-list">
+        <!-- Paper 1: Virtual Cells -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="venue-badge bio-badge">Genomics Communications Journal</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <h3 class="pub-title">
+            Artificial Intelligence and Single-Cell Omics: From Gene Regulation to Virtual Cells with Applications in iPSC-Based Regenerative Medicine
+          </h3>
+          <p class="pub-desc">
+            Investigates how foundation models and deep representation learning bridge single-cell transcriptomic/epigenomic regulation with predictive AI Virtual Cell simulations for induced pluripotent stem cell (iPSC) regenerative workflows.
+          </p>
+          <div class="tag-row">
+            <span class="tech-tag">AI Virtual Cells</span>
+            <span class="tech-tag">Single-Cell Omics</span>
+            <span class="tech-tag">Gene Regulation</span>
+            <span class="tech-tag">iPSC Regenerative Medicine</span>
+          </div>
+        </article>
+
+        <!-- Paper 2: LoViF ECCV 2026 -->
+        <article class="pub-item">
+          <div class="pub-meta">
+            <span class="venue-badge ai-badge">Springer Nature Meteor Journal · ECCV 2026</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://arxiv.org/abs/2607.21118" target="_blank" rel="noopener noreferrer">
+              The Second LoViF 2026 Challenge on Real-World All-in-One Image Restoration: Methods and <span class="nowrap">Results<span class="ext-arrow" aria-hidden="true">↗</span></span>
+            </a>
+          </h3>
+          <p class="pub-authors">
+            Xiang Chen, Hao Li, Jiangxin Dong, Jinshan Pan, &hellip;, <strong>E B Benson</strong>, et al.
+          </p>
+          <div class="pub-actions">
+            <a href="https://arxiv.org/abs/2607.21118" target="_blank" rel="noopener noreferrer" class="action-pill">arXiv:2607.21118</a>
+            <a href="https://arxiv.org/pdf/2607.21118" target="_blank" rel="noopener noreferrer" class="action-pill">PDF</a>
+            <button type="button" class="action-pill toggle-drawer-btn" data-target="lovif-abstract" aria-expanded="false">Abstract</button>
+            <button type="button" class="action-pill toggle-drawer-btn" data-target="lovif-bibtex" aria-expanded="false">BibTeX</button>
+          </div>
+
+          <div id="lovif-abstract" class="pub-drawer" hidden>
+            <p>
+              Presents a comprehensive review and benchmark of the second LoViF Challenge on Real-World All-in-One Image Restoration across diverse degradations including blur, low-light, haze, rain, and snow. Out of 1,740 challenge entries / participants, the top 20 verified solutions were reproduced and analyzed to establish design strategies for unified low-level vision models.
+            </p>
+          </div>
+
+          <div id="lovif-bibtex" class="pub-drawer bibtex-drawer" hidden>
+            <div class="bibtex-toolbar">
+              <span class="mono-label">BibTeX Citation</span>
+              <button type="button" class="copy-bib-btn" data-copy-target="lovif-bib-code">Copy</button>
+            </div>
+            <pre id="lovif-bib-code"><code>@article{chen2026secondlovif,
+  title   = {The Second LoViF 2026 Challenge on Real-World All-in-One Image Restoration: Methods and Results},
+  author  = {Chen, Xiang and Li, Hao and Dong, Jiangxin and Pan, Jinshan and others and Benson, E B},
+  journal = {arXiv preprint arXiv:2607.21118},
+  note    = {ECCV 2026 Workshops; Springer Nature Meteor Journal},
+  year    = {2026}
+}</code></pre>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 // Experience -->
+    <section id="experience" class="section" aria-labelledby="exp-heading">
+      <div class="section-header">
+        <span class="section-index">02 // EXPERIENCE</span>
+        <h2 id="exp-heading" class="section-title">Research &amp; Engineering Appointments</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item current">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Apr 2026 – Present</span>
+            <span class="timeline-loc">RIKEN BRC, Tsukuba, Japan</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">RIKEN LOTUS-JST Fellow</h3>
+            <p class="timeline-desc">
+              Working with <strong>Naoki Kubo’s group</strong> on <strong>AI Virtual Cell</strong> research, developing computational and deep learning approaches to model single-cell omics and gene regulatory dynamics.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Jul 2025 – Nov 2025</span>
+            <span class="timeline-loc">SpectraAI, Singapore</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">AI Intern</h3>
+            <p class="timeline-desc">
+              Built an <strong>Agentic Document Processor</strong> enabling autonomous multi-step document parsing, structured extraction, and LLM-driven verification workflows.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-meta">
+            <span class="timeline-date">May 2024 – Jun 2024</span>
+            <span class="timeline-loc">IIT Bombay, India</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">FOSSEE Summer Fellow</h3>
+            <p class="timeline-desc">
+              Worked with <strong>Radhendushka Srivastava’s group</strong> at the Indian Institute of Technology Bombay on statistical and computational <strong>Time Series Analysis</strong>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 // Open Source Contributions -->
+    <section id="open-source" class="section" aria-labelledby="oss-heading">
+      <div class="section-header">
+        <span class="section-index">03 // OPEN SOURCE</span>
+        <h2 id="oss-heading" class="section-title">Scientific &amp; Agentic Ecosystem Contributions</h2>
+      </div>
+
+      <div class="oss-grid">
+        <article class="oss-card">
+          <div class="oss-top">
+            <h3 class="oss-name">
+              <a href="https://github.com/pulls?q=is%3Apr+author%3ADeriverx2+org%3Anf-core" target="_blank" rel="noopener noreferrer">
+                nf-core <span class="ext-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <span class="mono-badge">Bioinformatics</span>
+          </div>
+          <p class="oss-desc">
+            Contributed bug fixes, deterministic test stabilization, and Nextflow DSL2 workflow improvements across core pipelines including <code>nf-core/hic</code>, <code>nf-core/methylseq</code>, and <code>nf-core/modules</code>.
+          </p>
+        </article>
+
+        <article class="oss-card">
+          <div class="oss-top">
+            <h3 class="oss-name">
+              <a href="https://github.com/i-am-bee/acp/commits?author=deriverx2" target="_blank" rel="noopener noreferrer">
+                ACP <span class="ext-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <span class="mono-badge">Multi-Agent Protocol</span>
+          </div>
+          <p class="oss-desc">
+            Contributed code and protocol enhancements to the open <strong>Agent Communication Protocol (ACP)</strong> project through pull requests and technical code reviews.
+          </p>
+        </article>
+
+        <article class="oss-card">
+          <div class="oss-top">
+            <h3 class="oss-name">
+              <a href="https://github.com/pydantic/pydantic-ai/commits?author=deriverx2" target="_blank" rel="noopener noreferrer">
+                PydanticAI <span class="ext-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <span class="mono-badge">Agent Framework</span>
+          </div>
+          <p class="oss-desc">
+            Contributed bug fixes and framework enhancements to <strong>PydanticAI</strong> for type-safe, structured agentic AI applications.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 // Projects -->
+    <section id="projects" class="section" aria-labelledby="proj-heading">
+      <div class="section-header section-header-row">
+        <div>
+          <span class="section-index">04 // SELECTED PROJECTS</span>
+          <h2 id="proj-heading" class="section-title">Research &amp; Systems Engineering</h2>
+        </div>
+
+        <div class="filter-group" role="tablist" aria-label="Filter projects by domain">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-filter="bio" role="tab" aria-selected="false">BioAI</button>
+          <button type="button" class="filter-btn" data-filter="llm" role="tab" aria-selected="false">LLMs &amp; RAG</button>
+          <button type="button" class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Forecasting &amp; Systems</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="bio">
+          <div class="project-top">
+            <span class="project-domain">Bioinformatics · Deep Learning</span>
+            <a href="https://github.com/Deriverx2/BScProject" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Parkinson's Prediction repository on GitHub">
+              Code ↗
+            </a>
+          </div>
+          <h3 class="project-title">Parkinson’s Disease Prediction from Blood Gene Expression (GEO)</h3>
+          <ul class="project-points">
+            <li>Built an end-to-end bioinformatics pipeline combining deep autoencoders and downstream classifiers on Gene Expression Omnibus (GEO) cohorts.</li>
+            <li>Applied transcriptomic/methylation normalization, feature selection, and dimensionality reduction, achieving <strong>0.80 AUC</strong> on early-stage Parkinson’s detection.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">GEOquery</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="llm">
+          <div class="project-top">
+            <span class="project-domain">LLM Fine-Tuning · Reasoning</span>
+            <a href="https://github.com/Deriverx2/LinearAlgebraQuestions" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Cognitive LLM repository on GitHub">
+              Code ↗
+            </a>
+          </div>
+          <h3 class="project-title">Cognitive LLM for Algebraic Question Generation</h3>
+          <ul class="project-points">
+            <li>Fine-tuned large language models via Parameter-Efficient Fine-Tuning (<strong>LoRA</strong>) on structured algebra problem sets.</li>
+            <li>Designed a curated dataset and controlled generation pipeline for syntactically valid LaTeX-formatted mathematical questions.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">Hugging Face Transformers</span>
+            <span class="tech-tag">LoRA</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">PyTorch</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="llm">
+          <div class="project-top">
+            <span class="project-domain">Document AI · Local RAG</span>
+          </div>
+          <h3 class="project-title">Automated Customs Declaration Software</h3>
+          <ul class="project-points">
+            <li>Extracted structured layouts and tables from complex regulatory PDFs using <code>Docling</code> and indexed dense vector embeddings in <code>PostgreSQL</code>.</li>
+            <li>Deployed a local LLM via <code>LM Studio</code> to parse user queries over retrieved context and synthesize accurate customs form entries.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">Docling</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">LM Studio</span>
+            <span class="tech-tag">Vector Search</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="systems">
+          <div class="project-top">
+            <span class="project-domain">Econometrics · Sequence Modeling</span>
+          </div>
+          <h3 class="project-title">Forecasting Financial Variations via Autoregressive &amp; Attention Models</h3>
+          <ul class="project-points">
+            <li>Modeled high-volatility cryptocurrency series and INR–USD exchange rate dynamics across multiple regimes.</li>
+            <li>Benchmarked classical parametric formulations (<code>AR</code>, <code>ARIMA</code>, <code>TAR</code>) against modern attention-based neural architectures.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">R</span>
+            <span class="tech-tag">forecast</span>
+            <span class="tech-tag">tseries</span>
+            <span class="tech-tag">Attention Models</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="systems">
+          <div class="project-top">
+            <span class="project-domain">Smart Mobility · Distributed Systems</span>
+          </div>
+          <h3 class="project-title">Automated Parking Vendor System</h3>
+          <ul class="project-points">
+            <li>Co-created a real-time, vendor-assistive parking allocation platform balancing spatial demand and vendor capacity.</li>
+            <li>Deployed in live trial phases in India, measurably improving local traffic throughput and vendor load management.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Google Cloud</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 // Honors & Education -->
+    <section id="credentials" class="section" aria-labelledby="cred-heading">
+      <div class="dual-columns">
+        <!-- Honors & Fellowships -->
+        <div>
+          <div class="section-header">
+            <span class="section-index">05 // HONORS &amp; FELLOWSHIPS</span>
+            <h2 id="cred-heading" class="section-title">Recognition</h2>
+          </div>
+
+          <ul class="honor-list">
+            <li class="honor-item">
+              <span class="honor-year">2027</span>
+              <div class="honor-content">
+                <strong>LOTUS ASPIRE JST Fellowship</strong>
+                <span>Recipient · Japan Science and Technology Agency</span>
+              </div>
+            </li>
+            <li class="honor-item">
+              <span class="honor-year">2026</span>
+              <div class="honor-content">
+                <strong>LoViF 2026 Image Restoration Challenge</strong>
+                <span>Top 20 out of 1,740 participants · ECCV 2026</span>
+              </div>
+            </li>
+            <li class="honor-item">
+              <span class="honor-year">2026</span>
+              <div class="honor-content">
+                <strong>LOTUS-JST Fellowship</strong>
+                <span>Recipient · RIKEN &amp; JST</span>
+              </div>
+            </li>
+            <li class="honor-item">
+              <span class="honor-year">2026</span>
+              <div class="honor-content">
+                <strong>GATE Data Science &amp; AI (DA)</strong>
+                <span>Qualified · National Graduate Aptitude Test in Engineering</span>
+              </div>
+            </li>
+            <li class="honor-item">
+              <span class="honor-year">2024</span>
+              <div class="honor-content">
+                <strong>FOSSEE Summer Fellowship</strong>
+                <span>Recipient · IIT Bombay</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <div class="section-header">
+            <span class="section-index">06 // EDUCATION</span>
+            <h2 class="section-title">Academic Training</h2>
+          </div>
+
+          <div class="edu-list">
+            <article class="edu-card">
+              <div class="edu-header">
+                <span class="edu-period">Oct 2022 – Present</span>
+                <span class="edu-loc">Kerala, India</span>
+              </div>
+              <h3 class="edu-inst">Cochin University of Science and Technology (CUSAT)</h3>
+              <p class="edu-degree">Integrated M.Sc. in Artificial Intelligence &amp; Data Science</p>
+            </article>
+
+            <article class="edu-card">
+              <div class="edu-header">
+                <span class="edu-period">2022</span>
+                <span class="edu-loc">Kerala, India</span>
+              </div>
+              <h3 class="edu-inst">Kendriya Vidyalaya Ernakulam</h3>
+              <p class="edu-degree">Senior Secondary Education</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">E B Benson</span>
+        <span class="footer-sep">·</span>
+        <span>Tsukuba, Ibaraki, Japan</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:benson.e.benny@gmail.com">Email</a>
+        <a href="https://github.com/Deriverx2" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/bensoneb" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://arxiv.org/abs/2607.21118" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
