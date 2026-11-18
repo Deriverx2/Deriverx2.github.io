@@ -96,9 +96,9 @@ pre,
 .index-link span,
 .edition-toggle,
 .kicker,
+.collab-status,
 .corr-key,
 .stamp-btn,
-.plate-rulers,
 .focus-ref,
 .paper-topline,
 .index-terms,
@@ -278,19 +278,19 @@ code {
 }
 
 /* ==========================================================================
-   Asymmetric Editorial Hero & Scientific Specimen Plate
+   Asymmetric Editorial Hero & Collaboration Sidebar
    ========================================================================== */
 
 .hero-folio {
-  padding: 56px 0 0;
+  padding: 58px 0 0;
   border-bottom: 1px solid var(--ink-primary);
 }
 
 .hero-asymmetric {
   display: grid;
-  grid-template-columns: 1.24fr 0.96fr;
-  gap: 48px;
-  align-items: start;
+  grid-template-columns: 1.38fr 0.82fr;
+  gap: 52px;
+  align-items: end;
   padding-bottom: 48px;
 }
 
@@ -322,7 +322,7 @@ code {
 .display-name {
   font-family: "Instrument Serif", Georgia, serif;
   font-weight: 400;
-  font-size: clamp(3.6rem, 6.6vw, 5.4rem);
+  font-size: clamp(3.8rem, 6.8vw, 5.6rem);
   line-height: 0.94;
   letter-spacing: -0.02em;
   margin: 0 0 20px;
@@ -330,11 +330,11 @@ code {
 
 .editorial-thesis {
   font-family: "Instrument Serif", Georgia, serif;
-  font-size: clamp(1.42rem, 2.3vw, 1.82rem);
-  line-height: 1.26;
+  font-size: clamp(1.48rem, 2.35vw, 1.9rem);
+  line-height: 1.25;
   margin: 0 0 18px;
   color: var(--ink-primary);
-  max-width: 32ch;
+  max-width: 34ch;
 }
 
 .editorial-thesis em {
@@ -343,11 +343,11 @@ code {
 }
 
 .editorial-prose {
-  margin: 0 0 28px;
+  margin: 0;
   font-size: 0.96rem;
   line-height: 1.68;
   color: var(--ink-secondary);
-  max-width: 58ch;
+  max-width: 60ch;
 }
 
 .editorial-prose strong {
@@ -355,11 +355,56 @@ code {
   font-weight: 600;
 }
 
+/* Architectural Collaboration & Correspondence Sidebar */
+.hero-sidebar {
+  border-left: 1px solid var(--rule-hairline);
+  padding-left: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.collab-note {
+  padding: 14px 16px;
+  background: var(--vermilion-wash);
+  border-left: 2px solid var(--vermilion);
+}
+
+.collab-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.68rem;
+  letter-spacing: 0.09em;
+  color: var(--vermilion);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.collab-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--vermilion);
+}
+
+.collab-note p {
+  margin: 0;
+  font-size: 0.87rem;
+  line-height: 1.54;
+  color: var(--ink-secondary);
+}
+
+.collab-note strong {
+  color: var(--ink-primary);
+  font-weight: 600;
+}
+
 /* Correspondence Ledger */
 .correspondence-ledger {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   padding-top: 20px;
   border-top: 1px solid var(--rule-hairline);
 }
@@ -379,13 +424,13 @@ code {
 .corr-inline {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .corr-email {
   font-weight: 600;
-  font-size: 0.89rem;
+  font-size: 0.91rem;
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: 1px;
   transition: border-color 0.18s ease, color 0.18s ease;
@@ -399,13 +444,13 @@ code {
 .corr-links {
   display: flex;
   align-items: center;
-  gap: 8px 13px;
+  gap: 8px 16px;
   flex-wrap: wrap;
 }
 
 .underline-link {
   font-weight: 600;
-  font-size: 0.89rem;
+  font-size: 0.9rem;
   white-space: nowrap;
   border-bottom: 1px solid transparent;
   padding-bottom: 1px;
@@ -463,89 +508,6 @@ a:hover .diag {
   background: var(--vermilion);
   border-color: var(--vermilion);
   color: #fff;
-}
-
-/* Scientific Specimen Plate (FIG. 01) */
-.specimen-plate {
-  margin: 6px 0 0;
-  border: 1px solid var(--ink-primary);
-  background: var(--bg-plate);
-  position: relative;
-  min-width: 0;
-  max-width: 100%;
-}
-
-.plate-rulers {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 8px 11px;
-  border-bottom: 1px solid var(--rule-hairline);
-  font-size: 0.635rem;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-  min-width: 0;
-}
-
-.plate-id {
-  color: var(--ink-secondary);
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.plate-telemetry {
-  color: var(--vermilion);
-  font-weight: 500;
-  flex-shrink: 0;
-}
-
-.plate-stage {
-  position: relative;
-  height: 274px;
-  width: 100%;
-  overflow: hidden;
-  background-image:
-    linear-gradient(to right, var(--rule-hairline) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--rule-hairline) 1px, transparent 1px);
-  background-size: 36px 36px;
-}
-
-.crosshair {
-  position: absolute;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  line-height: 1;
-  color: var(--ink-muted);
-  pointer-events: none;
-  user-select: none;
-}
-
-.ch-tl { top: 6px; left: 8px; }
-.ch-tr { top: 6px; right: 8px; }
-.ch-bl { bottom: 6px; left: 8px; }
-.ch-br { bottom: 6px; right: 8px; }
-
-#neural-cell-canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: crosshair;
-}
-
-.plate-caption {
-  padding: 9px 12px;
-  border-top: 1px solid var(--rule-hairline);
-  font-size: 0.76rem;
-  line-height: 1.48;
-  color: var(--ink-secondary);
-  background: var(--bg-surface);
-}
-
-.plate-caption strong {
-  color: var(--ink-primary);
-  font-weight: 600;
 }
 
 /* Asymmetric Architectural Focus Strip (Breaks Uniform 3-Card Cliché) */
@@ -1162,7 +1124,18 @@ a:hover .diag {
 
   .hero-asymmetric {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
+  }
+
+  .hero-sidebar {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--rule-hairline);
+    padding-top: 24px;
+  }
+
+  .correspondence-ledger {
+    padding-top: 16px;
   }
 
   .focus-ledger {
@@ -1262,7 +1235,6 @@ a:hover .diag {
 
 @media print {
   .masthead,
-  .specimen-plate,
   .grain-svg,
   .index-tabs,
   #copy-email-btn {

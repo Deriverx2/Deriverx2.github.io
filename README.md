@@ -7,5 +7,4 @@ Personal research website for **E B Benson** — RIKEN LOTUS-JST Research Fellow
 ## Design & Architecture
 
 - **Editorial Monograph Aesthetic:** Inspired by Japanese scientific monographs and Swiss architectural indices — set in **Instrument Serif**, **Schibsted Grotesk**, and **IBM Plex Mono** over tactile **Washi Paper (`#F4F1EA`)** and **Sumi Ink (`#121110`)** editions accented with **Tsukuba Vermilion (`#C83E2B`)**.
-- **FIG. 01 — In Silico Regulatory Manifold:** Interactive HTML5 Canvas technical specimen simulating transcription/latent loci perturbations and directed state cascades.
-- **Academic Ready:** Direct `arXiv` and PDF links, expandable abstracts, one-click BibTeX records, marginalia domain filters, and clean print layout.
+- **Academic Ready:** Direct `arXiv` and PDF links, Google Scholar integration, expandable abstracts, one-click BibTeX records, marginalia domain filters, and clean print layout.
