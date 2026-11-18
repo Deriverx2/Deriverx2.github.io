@@ -1,18 +1,11 @@
-# E B Benson — Personal Research Website
+# E B Benson — Research Monograph
 
-Personal research homepage for **E B Benson** — RIKEN LOTUS-JST Fellow at RIKEN BioResource Research Center (Tsukuba, Japan), working at the intersection of **AI Virtual Cells**, **Single-Cell Omics**, **Agentic AI Systems**, and **Computer Vision**.
+Personal research website for **E B Benson** — RIKEN LOTUS-JST Research Fellow at RIKEN BioResource Research Center (Tsukuba, Japan), working at the intersection of **AI Virtual Cells**, **Single-Cell Omics**, **Agentic AI Systems**, and **Computer Vision**.
 
 **Live Site:** [https://deriverx2.github.io/](https://deriverx2.github.io/)
 
-## Overview
+## Design & Architecture
 
-- **Minimal, Fast & Zero-Dependency:** Semantic HTML5, CSS custom properties (Dark *Obsidian Lab* & Light *Archival Preprint* themes), and vanilla JavaScript.
-- **Interactive Latent Regulatory Graph:** HTML5 Canvas simulation representing single-cell gene regulatory and neural latent message-passing dynamics.
-- **Academic & Research Ready:** Direct arXiv/PDF links, expandable abstracts, one-click BibTeX citations, domain-filterable project catalog, and clean print layout.
-
-## Structure
-
-- `index.html` — Content, structured JSON-LD academic metadata, and semantic layout
-- `styles.css` — Dual-theme design system, responsive layout, and print styles
-- `script.js` — Latent regulatory graph simulation, theme toggle, BibTeX/email copy, and project filters
-- `favicon.svg` — Custom vector graph icon
+- **Editorial Monograph Aesthetic:** Inspired by Japanese scientific monographs and Swiss architectural indices — set in **Instrument Serif**, **Schibsted Grotesk**, and **IBM Plex Mono** over tactile **Washi Paper (`#F4F1EA`)** and **Sumi Ink (`#121110`)** editions accented with **Tsukuba Vermilion (`#C83E2B`)**.
+- **FIG. 01 — In Silico Regulatory Manifold:** Interactive HTML5 Canvas technical specimen simulating transcription/latent loci perturbations and directed state cascades.
+- **Academic Ready:** Direct `arXiv` and PDF links, expandable abstracts, one-click BibTeX records, marginalia domain filters, and clean print layout.
