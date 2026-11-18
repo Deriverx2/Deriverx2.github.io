@@ -69,7 +69,7 @@
         copyEmailLabel.textContent = "Copied!";
         clearTimeout(emailTimer);
         emailTimer = setTimeout(function () {
-          copyEmailLabel.textContent = "Copy Email";
+          copyEmailLabel.textContent = "Copy";
         }, 1800);
       });
     });
